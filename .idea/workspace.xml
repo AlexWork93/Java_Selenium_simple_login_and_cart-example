@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9964303-f15b-4417-a921-e12f65e33e02" name="Changes" comment="init project">
+    <list default="true" id="d9964303-f15b-4417-a921-e12f65e33e02" name="Changes" comment="cover login and add to cart base functionality">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
@@ -102,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677085736744</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cover login and add to cart base functionality">
+      <created>1677091751386</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677091751386</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +120,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project" />
+    <MESSAGE value="cover login and add to cart base functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="cover login and add to cart base functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

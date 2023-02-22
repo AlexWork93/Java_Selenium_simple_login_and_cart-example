@@ -1,4 +1,4 @@
-package org.example;
+package feature;
 
 import Steps.CartSteps;
 import Steps.LoginSteps;
