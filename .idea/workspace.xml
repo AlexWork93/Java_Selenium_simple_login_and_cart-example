@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9964303-f15b-4417-a921-e12f65e33e02" name="Changes" comment="cover login and add to cart base functionality">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/ShopPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/CartSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/LoginSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/ShopSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Java_Selenium_simple_login_and_cart-example.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="d9964303-f15b-4417-a921-e12f65e33e02" name="Changes" comment="minor update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Features/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Features/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/LoginSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +59,11 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="feature.App" />
+      <option name="MAIN_CLASS_NAME" value="Features.App" />
       <module name="Java_Selenium_simple_login_and_cart-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="feature.*" />
+          <option name="PATTERN" value="Features.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677091751386</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add feature package">
+      <created>1677091905919</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677091905919</updated>
+    </task>
+    <task id="LOCAL-00004" summary="minor update">
+      <created>1677091958853</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677091958853</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,13 +127,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
     <MESSAGE value="cover login and add to cart base functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="cover login and add to cart base functionality" />
+    <MESSAGE value="add feature package" />
+    <MESSAGE value="minor update" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/App.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Features/App.java</url>
           <line>33</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

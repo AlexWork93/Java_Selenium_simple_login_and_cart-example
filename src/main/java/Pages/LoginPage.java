@@ -10,6 +10,7 @@ public class LoginPage {
     public By roleSelectorLocator = By.cssSelector("select.form-control");
     public By termsCheckboxLocator = By.cssSelector("#terms");
     public By signInButtonLocator = By.cssSelector("#signInBtn");
+    public By alertConfirmButtonLocator = By.cssSelector("#okayBtn");
 
 
     public By getUserOrAdminSwitchRadioButtonLocator(boolean isAdmin) {

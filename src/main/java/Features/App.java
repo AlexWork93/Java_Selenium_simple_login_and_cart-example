@@ -28,8 +28,10 @@ public class App
         ShopSteps shopSteps = new ShopSteps(driver, wait);
         CartSteps cartSteps = new CartSteps(driver, wait);
 
-        loginSteps.performLoginWithFollowingData("rahulshettyacademy", "learning", true, "Student", true, true);
+        loginSteps.performLoginWithFollowingData("rahulshettyacademy", "learning", false, "Consultant", true);
         shopSteps.addAllDisplayedItemsToCart();
         shopSteps.clickOnCheckoutButton();
+
+        driver.quit();
     }
 }
