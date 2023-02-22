@@ -1,4 +1,4 @@
-package feature;
+package Features;
 
 import Steps.CartSteps;
 import Steps.LoginSteps;

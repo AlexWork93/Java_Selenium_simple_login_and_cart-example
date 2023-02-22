@@ -67,11 +67,11 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <option name="MAIN_CLASS_NAME" value="feature.App" />
       <module name="Java_Selenium_simple_login_and_cart-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="feature.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
