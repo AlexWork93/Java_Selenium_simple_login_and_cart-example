@@ -1,4 +1,4 @@
-package Pages;
+package Pages.RSAcademy;
 
 
 import org.openqa.selenium.By;

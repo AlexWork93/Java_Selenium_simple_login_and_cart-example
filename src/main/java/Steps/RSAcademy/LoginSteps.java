@@ -1,10 +1,11 @@
-package Steps;
+package Steps.RSAcademy;
 
-import Pages.LoginPage;
+import Pages.RSAcademy.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class LoginSteps {
     WebDriver driver;
@@ -31,5 +32,17 @@ public class LoginSteps {
         if (agreeWithTerms)
             driver.findElement(loginPage.termsCheckboxLocator).click();
         driver.findElement(loginPage.signInButtonLocator).click();
+    }
+
+    public void openResumeAssistanceLink() {
+        LoginPage loginPage = new LoginPage();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(loginPage.usernameLocator));
+        driver.findElement(loginPage.resumeAssistanceButtonLocator).click();
+    }
+
+    public void shouldSeeSingInButton() {
+        LoginPage loginPage = new LoginPage();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(loginPage.usernameLocator));
+        Assert.assertTrue(driver.findElement(loginPage.signInButtonLocator).isDisplayed());
     }
 }

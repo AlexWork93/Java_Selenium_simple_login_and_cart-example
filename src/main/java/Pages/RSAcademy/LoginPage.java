@@ -1,4 +1,4 @@
-package Pages;
+package Pages.RSAcademy;
 
 
 import org.openqa.selenium.By;
@@ -11,7 +11,7 @@ public class LoginPage {
     public By termsCheckboxLocator = By.cssSelector("#terms");
     public By signInButtonLocator = By.cssSelector("#signInBtn");
     public By alertConfirmButtonLocator = By.cssSelector("#okayBtn");
-
+    public By resumeAssistanceButtonLocator = By.cssSelector(".blinkingText");
 
     public By getUserOrAdminSwitchRadioButtonLocator(boolean isAdmin) {
         if (isAdmin)
