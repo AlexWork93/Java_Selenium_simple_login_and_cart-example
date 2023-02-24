@@ -1,17 +1,19 @@
 package Features;
 
 import Steps.HerokuApp.NestedFramesSteps;
-import Steps.RSAcademy.CartSteps;
-import Steps.RSAcademy.LoginSteps;
-import Steps.RSAcademy.RSAcademyDocumentRequestSteps;
-import Steps.RSAcademy.ShopSteps;
+import Steps.RSAcademy.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -33,6 +35,7 @@ public class App
         ShopSteps shopSteps = new ShopSteps(driver, wait);
         CartSteps cartSteps = new CartSteps(driver, wait);
         RSAcademyDocumentRequestSteps rsAcademyDocumentRequestSteps = new RSAcademyDocumentRequestSteps(driver, wait);
+        RSAcademyAutomationPractiseSteps rsAcademyAutomationPractiseSteps = new RSAcademyAutomationPractiseSteps(driver, wait);
         NestedFramesSteps nestedFramesSteps = new NestedFramesSteps(driver, wait);
 
         //Test 1 User should be able to add all items available on the page to a cart
@@ -64,6 +67,22 @@ public class App
         nestedFramesSteps.shouldSeeTextContent("middle");
         nestedFramesSteps.switchToIframeByName("right");
         nestedFramesSteps.shouldSeeTextContent("right");
+
+        //Test 4 User should be able to perform following actions
+        // Select any checkbox
+        // Grab the label of the selected checkbox
+        // Select an option in dropdown. Here options to select should become from the step 2
+        // Enter step 2 grabbed label text in edit box
+        // Click alert and verify if text grabbed from the step 2 is present in the Pop-Up message
+
+        driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
+        rsAcademyAutomationPractiseSteps.clickOnCheckboxByIndex(2);
+        String labelOfSelectedCheckbox = rsAcademyAutomationPractiseSteps.getLabelOfSelectedCheckbox();
+        rsAcademyAutomationPractiseSteps.selectDropdownOptionByVisibleText(labelOfSelectedCheckbox);
+        rsAcademyAutomationPractiseSteps.fillAlertEditBoxWithText(labelOfSelectedCheckbox);
+        rsAcademyAutomationPractiseSteps.clickOnAlertButton();
+        rsAcademyAutomationPractiseSteps.verifyAlertMessageContainsText(labelOfSelectedCheckbox);
+        rsAcademyAutomationPractiseSteps.confirmAlert();
 
 
         driver.quit();
