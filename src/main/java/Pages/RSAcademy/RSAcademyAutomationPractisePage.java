@@ -9,5 +9,7 @@ public class RSAcademyAutomationPractisePage {
     public By editBoxForAlertLocator = By.cssSelector("#name");
     public By alertButtonLocator = By.cssSelector("#alertbtn");
     public By checkboxLabelLocator = By.cssSelector("#checkbox-example label");
+    public By footer = By.cssSelector("div#gf-BIG");
+
 
 }

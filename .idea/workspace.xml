@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9964303-f15b-4417-a921-e12f65e33e02" name="Changes" comment="add cases to show skills of handling selectors, alerts, checkboxes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/JQueryUI/JQueryUIDatepickersPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/JQueryUI/JQueryUIDatepickersSteps.java" afterDir="false" />
+    <list default="true" id="d9964303-f15b-4417-a921-e12f65e33e02" name="Changes" comment="add cases to show skills of handling datepickers with different approaches to select date">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Features/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Features/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RSAcademy/RSAcademyAutomationPractisePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RSAcademy/RSAcademyAutomationPractisePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/RSAcademy/RSAcademyAutomationPractiseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/RSAcademy/RSAcademyAutomationPractiseSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,9 @@
       <workItem from="1677140795904" duration="12702000" />
       <workItem from="1677227055812" duration="6158000" />
       <workItem from="1677275005583" duration="1784000" />
-      <workItem from="1677319906249" duration="21613000" />
+      <workItem from="1677319906249" duration="22068000" />
+      <workItem from="1677485946136" duration="19215000" />
+      <workItem from="1677780794170" duration="8907000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1677085736744</created>
@@ -149,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677276724874</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add cases to show skills of handling datepickers with different approaches to select date">
+      <created>1677350374317</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677350374317</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,14 +187,15 @@
     <MESSAGE value="update logic of confirming an alert popup" />
     <MESSAGE value="add cases to show functionality ti switch between tabs&#10;add cases to show functionality to switch between iframes&#10;add separate packages for RSAcademy and HerokuApp pages" />
     <MESSAGE value="add cases to show skills of handling selectors, alerts, checkboxes" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cases to show skills of handling selectors, alerts, checkboxes" />
+    <MESSAGE value="add cases to show skills of handling datepickers with different approaches to select date" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cases to show skills of handling datepickers with different approaches to select date" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Features/App.java</url>
-          <line>106</line>
+          <line>129</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
