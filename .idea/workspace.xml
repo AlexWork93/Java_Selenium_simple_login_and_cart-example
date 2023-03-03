@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9964303-f15b-4417-a921-e12f65e33e02" name="Changes" comment="rearrange directories">
+    <list default="true" id="d9964303-f15b-4417-a921-e12f65e33e02" name="Changes" comment="add scenario to show skills of working with tables, pagination using streams;">
       <change afterPath="$PROJECT_DIR$/src/main/java/Pages/RSAcademy/RSAcademyGreenKartTopDealsPage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Steps/RSAcademy/RSAcademyGreenKartTopDealsSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -102,7 +102,7 @@
       <workItem from="1677319906249" duration="22068000" />
       <workItem from="1677485946136" duration="19215000" />
       <workItem from="1677780794170" duration="9361000" />
-      <workItem from="1677841477806" duration="10659000" />
+      <workItem from="1677841477806" duration="11009000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1677085736744</created>
@@ -174,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677880623862</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add scenario to show skills of working with tables, pagination using streams;">
+      <created>1677881653055</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677881653055</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,14 +212,15 @@
     <MESSAGE value="add cases to show skills of handling datepickers with different approaches to select date" />
     <MESSAGE value="add cases to show skills of working with HttpURLConnection class&#10;add ChromeOptions class and set some preferences like default download path and ignoring popup messages in browser &#10;add soft assertion into method for verification list of links" />
     <MESSAGE value="rearrange directories" />
-    <option name="LAST_COMMIT_MESSAGE" value="rearrange directories" />
+    <MESSAGE value="add scenario to show skills of working with tables, pagination using streams;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add scenario to show skills of working with tables, pagination using streams;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Features/App.java</url>
-          <line>140</line>
+          <line>139</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

@@ -33,7 +33,7 @@ public class RSAcademyGreenKartTopDealsSteps {
                     .filter(el -> el.findElements(rsAcademyGreenKartTopDealsPage.tableCell).get(0).getText().equalsIgnoreCase(itemName))
                     .collect(Collectors.toList());
             if (asd.size() > 0) {
-                actualValue = Integer.parseInt(asd.get(0).findElements(rsAcademyGreenKartTopDealsPage.tableCell).get(getHeaderIndex(expectedValueName)).getText());
+                actualValue = Integer.parseInt(asd.get(0).findElements(rsAcademyGreenKartTopDealsPage.tableCell).get(getColumnIndexByHeader(expectedValueName)).getText());
             }
             if (driver.findElement(rsAcademyGreenKartTopDealsPage.nextPageButton).getAttribute("aria-disabled").equalsIgnoreCase("true"))
                 break;
@@ -42,7 +42,7 @@ public class RSAcademyGreenKartTopDealsSteps {
         Assert.assertEquals(actualValue, expectedValue);
     }
 
-    private int getHeaderIndex(String header){
+    private int getColumnIndexByHeader(String header){
         RSAcademyGreenKartTopDealsPage rsAcademyGreenKartTopDealsPage = new RSAcademyGreenKartTopDealsPage();
         wait.until(ExpectedConditions.visibilityOfElementLocated(rsAcademyGreenKartTopDealsPage.tableHeader));
         List<WebElement> headers = driver.findElements(rsAcademyGreenKartTopDealsPage.tableHeader);
