@@ -3,16 +3,19 @@ package Features;
 import Steps.HerokuApp.NestedFramesSteps;
 import Steps.JQueryUI.JQueryUIDatepickersSteps;
 import Steps.RSAcademy.*;
+import Steps.RSAcademy.ProtoCommerce.CartSteps;
+import Steps.RSAcademy.ProtoCommerce.LoginSteps;
+import Steps.RSAcademy.ProtoCommerce.ShopSteps;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Hello world!
@@ -36,15 +39,16 @@ public class App {
 
         driver.get("https://rahulshettyacademy.com/loginpagePractise/");
 
-        LoginSteps loginSteps = new LoginSteps(driver, wait);
-        ShopSteps shopSteps = new ShopSteps(driver, wait);
-        CartSteps cartSteps = new CartSteps(driver, wait);
-        RSAcademyDocumentRequestSteps rsAcademyDocumentRequestSteps = new RSAcademyDocumentRequestSteps(driver, wait);
-        RSAcademyAutomationPractiseSteps rsAcademyAutomationPractiseSteps = new RSAcademyAutomationPractiseSteps(driver, wait);
-        NestedFramesSteps nestedFramesSteps = new NestedFramesSteps(driver, wait);
-        JQueryUIDatepickersSteps jQueryUIDatepickersSteps = new JQueryUIDatepickersSteps(driver, wait);
-
-
+//
+//        LoginSteps loginSteps = new LoginSteps(driver, wait);
+//        ShopSteps shopSteps = new ShopSteps(driver, wait);
+//        CartSteps cartSteps = new CartSteps(driver, wait);
+//        RSAcademyDocumentRequestSteps rsAcademyDocumentRequestSteps = new RSAcademyDocumentRequestSteps(driver, wait);
+//        RSAcademyAutomationPractiseSteps rsAcademyAutomationPractiseSteps = new RSAcademyAutomationPractiseSteps(driver, wait);
+//        NestedFramesSteps nestedFramesSteps = new NestedFramesSteps(driver, wait);
+//        JQueryUIDatepickersSteps jQueryUIDatepickersSteps = new JQueryUIDatepickersSteps(driver, wait);
+        RSAcademyGreenKartTopDealsSteps rsAcademyGreenKartTopDealsSteps = new RSAcademyGreenKartTopDealsSteps(driver, wait);
+//
 //        //Test 1 User should be able to add all items available on the page to a cart
 //        driver.get("https://rahulshettyacademy.com/loginpagePractise/");
 //        loginSteps.performLoginWithFollowingData("rahulshettyacademy", "learning", false, "Consultant", true);
@@ -76,11 +80,11 @@ public class App {
 //        nestedFramesSteps.shouldSeeTextContent("right");
 //
 //        //Test 4 User should be able to perform following actions
-//        // Select any checkbox
-//        // Grab the label of the selected checkbox
-//        // Select an option in dropdown. Here options to select should become from the step 2
-//        // Enter step 2 grabbed label text in edit box
-//        // Click alert and verify if text grabbed from the step 2 is present in the Pop-Up message
+//        //Select any checkbox
+//        //Grab the label of the selected checkbox
+//        //Select an option in dropdown. Here options to select should become from the step 2
+//        //Enter step 2 grabbed label text in edit box
+//        //Click alert and verify if text grabbed from the step 2 is present in the Pop-Up message
 //
 //        driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
 //        rsAcademyAutomationPractiseSteps.clickOnCheckboxByIndex(2);
@@ -108,17 +112,29 @@ public class App {
 //        jQueryUIDatepickersSteps.verifyDayIsSelectedInDatepicker( datapickerResult[0], datapickerResult[1]);
 //
 //        //Test 6 User should be able to take a screenshot
-
+//
 //        File src =  ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 //        FileUtils.copyFile(src, new File("project_downloads/screen.png"));
+//
+//          //Test 7
+//        driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
+//        rsAcademyAutomationPractiseSteps.scrollToFooterUsingJavaScript();
+//        rsAcademyAutomationPractiseSteps.verifyAvailabilityOfAllFooterURL();
+//
 
-          //Test 7
-        driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
-        rsAcademyAutomationPractiseSteps.scrollToFooterUsingJavaScript();
-        rsAcademyAutomationPractiseSteps.verifyAvailabilityOfAllFooterURL();
-
-
-
+        //Test 8 User should be able to verify table data and use pagination
+        driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
+        rsAcademyGreenKartTopDealsSteps.verifyValueByItemName("Banana", "Price", 87);
+        rsAcademyGreenKartTopDealsSteps.verifyValueByItemName("Strawberry", "Discount price", 15);
+        rsAcademyGreenKartTopDealsSteps.verifyAmountItemsIsDisplayed(5);
+        rsAcademyGreenKartTopDealsSteps.setAmountOfDisplayedItems(10);
+        rsAcademyGreenKartTopDealsSteps.verifyAmountItemsIsDisplayed(10);
+        rsAcademyGreenKartTopDealsSteps.setAmountOfDisplayedItems(20);
+        rsAcademyGreenKartTopDealsSteps.verifyAmountItemsIsDisplayed(19);
+        rsAcademyGreenKartTopDealsSteps.setFilterValue("Banana");
+        rsAcademyGreenKartTopDealsSteps.verifyAmountItemsIsDisplayed(1);
+        rsAcademyGreenKartTopDealsSteps.setFilterValue(" ");
+        rsAcademyGreenKartTopDealsSteps.verifyAmountItemsIsDisplayed(19);
 
 
         driver.quit();

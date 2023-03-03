@@ -87,12 +87,12 @@ public class RSAcademyAutomationPractiseSteps {
         List<String> footerLinks = footerAnchorTags.stream().map(el -> el.getAttribute("href"))
                 .collect(Collectors.toList());
         footerLinks.stream().forEach(el -> {
-            accept(el, softAssert);
+            checkLinkAndUpdateAssertion(el, softAssert);
         });
         softAssert.assertAll();
     }
 
-    private void accept(String el, SoftAssert softAssert) {
+    private void checkLinkAndUpdateAssertion(String el, SoftAssert softAssert) {
         try {
             HttpURLConnection conn = (HttpURLConnection) new URL(el).openConnection();
             conn.setRequestMethod("HEAD");
