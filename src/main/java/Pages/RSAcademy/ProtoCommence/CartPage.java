@@ -1,4 +1,4 @@
-package Pages.RSAcademy;
+package Pages.RSAcademy.ProtoCommence;
 
 
 import org.openqa.selenium.By;

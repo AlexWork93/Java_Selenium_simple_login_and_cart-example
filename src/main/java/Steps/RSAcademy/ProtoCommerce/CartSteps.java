@@ -1,6 +1,6 @@
-package Steps.RSAcademy;
+package Steps.RSAcademy.ProtoCommerce;
 
-import Pages.RSAcademy.CartPage;
+import Pages.RSAcademy.ProtoCommence.CartPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;

@@ -1,6 +1,6 @@
-package Steps.RSAcademy;
+package Steps.RSAcademy.ProtoCommerce;
 
-import Pages.RSAcademy.ShopPage;
+import Pages.RSAcademy.ProtoCommence.ShopPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
