@@ -1,0 +1,7 @@
+<suite name = "Selenium Test Suite">
+    <test name = "Selenium Test Case">
+        <classes>
+            <class name = "Features.TestNGClass"/>
+        </classes>
+    </test>
+</suite>
