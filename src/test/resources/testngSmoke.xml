@@ -1,0 +1,13 @@
+<suite name="Smoke Test Suite">
+    <test name="Smoke Test Case">
+        <parameter name = "URLLoginPagePractice" value = "https://rahulshettyacademy.com/loginpagePractise/"/>
+        <groups>
+            <run>
+                <include name = "Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Features.TestNGClass"/>
+        </classes>
+    </test>
+</suite>

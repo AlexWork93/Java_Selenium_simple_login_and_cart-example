@@ -17,9 +17,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,8 +37,9 @@ public class TestNGClass {
     JQueryUIDatepickersSteps jQueryUIDatepickersSteps;
     RSAcademyGreenKartTopDealsSteps rsAcademyGreenKartTopDealsSteps;
 
-    @BeforeClass
-    public void Before() {
+    @BeforeClass(groups = {"Smoke"})
+    public void BeforeClass() {
+        System.out.println("Before class");
         options = new ChromeOptions();
         //Accept insecure http and ssl certificates
         options.setAcceptInsecureCerts(true);
@@ -64,23 +63,24 @@ public class TestNGClass {
         nestedFramesSteps = new NestedFramesSteps(driver, wait);
         jQueryUIDatepickersSteps = new JQueryUIDatepickersSteps(driver, wait);
         rsAcademyGreenKartTopDealsSteps = new RSAcademyGreenKartTopDealsSteps(driver, wait);
-
     }
 
-    @Test
-    public void test01_userShouldBeAbleToAddAllAvailableItemsFromThePageToCart() {
-        //Test 1 User should be able to add all items available on the page to a cart
-        driver.get("https://rahulshettyacademy.com/loginpagePractise/");
+    @Parameters({"URLLoginPagePractice"})
+    @Test(groups = {"Smoke"})
+    public void test01_userShouldBeAbleToAddAllAvailableItemsFromThePageToCart(String URL) {
+        System.out.println("Test 1 User should be able to add all items available on the page to a cart");
+        driver.get(URL);
         loginSteps.performLoginWithFollowingData("rahulshettyacademy", "learning", false, "Consultant", true);
         shopSteps.addAllDisplayedItemsToCart();
         shopSteps.clickOnCheckoutButton();
         cartSteps.shouldSeeAmountOfItemsCart(4);
     }
 
-    @Test
-    public void test02_userShouldBeAbleToOpenAnAcademyPageFromLoginPageInNewTab() {
-        //Test 2 User should be able to open academy page from login page
-        driver.get("https://rahulshettyacademy.com/loginpagePractise/");
+    @Parameters({"URLLoginPagePractice"})
+    @Test(groups = {"Smoke"})
+    public void test02_userShouldBeAbleToOpenAnAcademyPageFromLoginPageInNewTab(String URL) {
+        System.out.println("Test 2 User should be able to open academy page from login page");
+        driver.get(URL);
         loginSteps.shouldSeeSingInButton();
         loginSteps.openResumeAssistanceLink();
         Set<String> tabs = driver.getWindowHandles();
@@ -96,7 +96,7 @@ public class TestNGClass {
 
     @Test
     public void test03_userShouldBeAbleToSwitchBetweenFramesAndSeeCorrectInformation() {
-        //Test 3 User should be able to switch between iframes and see content on every iframe
+        System.out.println("Test 3 User should be able to switch between iframes and see content on every iframe");
         driver.get("https://the-internet.herokuapp.com/nested_frames");
         nestedFramesSteps.switchToIframeByName("left");
         nestedFramesSteps.shouldSeeTextContent("left");
@@ -109,7 +109,7 @@ public class TestNGClass {
     @Test
     public void test04_assignment() {
         //this test is an assignment task from course
-        //Test 4 User should be able to perform following actions
+        System.out.println("Test 4 User should be able to perform following actions");
         //Select any checkbox
         //Grab the label of the selected checkbox
         //Select an option in dropdown. Here options to select should become from the step 2
@@ -128,7 +128,7 @@ public class TestNGClass {
 
     @Test
     public void test05_userShouldBeAbleToInteractWithDifferentTypesOfDatePickers() throws InterruptedException {
-        //Test 5 User should be able to interact with different types of date pickers
+        System.out.println("Test 5 User should be able to interact with different types of date pickers");
         driver.get("https://jqueryui.com/datepicker/");
         jQueryUIDatepickersSteps.switchToDatepickerIframe();
         jQueryUIDatepickersSteps.selectDateInDatepickerByMountAndDay("january", "2");
@@ -149,17 +149,15 @@ public class TestNGClass {
 
     @Test
     public void test06_userShouldBeAbleToTakeAScreenShot() throws IOException {
-        //Test 6 User should be able to take a screenshot
+        System.out.println("Test 6 User should be able to take a screenshot");
         driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new
-
-                File("project_downloads/screen.png"));
+        FileUtils.copyFile(src, new File("project_downloads/screen.png"));
     }
 
     @Test
     public void test07_userShouldBeAbleToClickOnEveryPageIbFooterWithoutErrors() {
-        //Test 7
+        System.out.println("Test 7");
         //This scenario should be failed because list of links contains broken link
         driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
         rsAcademyAutomationPractiseSteps.scrollToFooterUsingJavaScript();
@@ -168,7 +166,7 @@ public class TestNGClass {
 
     @Test
     public void test08_userShouldBeAbleToVerifyTableDataAndUsePagination() {
-        //Test 8 User should be able to verify table data and use pagination
+        System.out.println("Test 8 User should be able to verify table data and use pagination");
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
         rsAcademyGreenKartTopDealsSteps.verifyValueByItemName("Banana", "Price", 87);
         rsAcademyGreenKartTopDealsSteps.verifyValueByItemName("Strawberry", "Discount price", 15);
@@ -183,9 +181,18 @@ public class TestNGClass {
         rsAcademyGreenKartTopDealsSteps.verifyAmountItemsIsDisplayed(19);
     }
 
-    @AfterTest
-    public void test() {
+    @AfterTest(groups = {"Smoke"})
+    public void afterTest() {
         driver.quit();
     }
 
+    @DataProvider
+    public Object[][] getData() {
+        Object [][] data = new Object[2][2];
+        data[0][0] = "rahulshettyacademy";
+        data[0][1] = "learning";
+        data[1][0] = "wronglogin";
+        data[1][1] = "wrongpass";
+        return data;
+    }
 }

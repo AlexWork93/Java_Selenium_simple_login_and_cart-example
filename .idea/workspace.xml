@@ -4,29 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9964303-f15b-4417-a921-e12f65e33e02" name="Changes" comment="update method name">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Features/TestNGClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+    <list default="true" id="d9964303-f15b-4417-a921-e12f65e33e02" name="Changes" comment="add testNG to project">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Features/testsToIncludeExcludeInXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Listeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testngSmoke.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Features/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HerokuApp/NestedFramesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HerokuApp/NestedFramesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/JQueryUI/JQueryUIDatepickersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/JQueryUI/JQueryUIDatepickersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RSAcademy/ProtoCommence/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/RSAcademy/ProtoCommence/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RSAcademy/ProtoCommence/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/RSAcademy/ProtoCommence/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RSAcademy/ProtoCommence/ShopPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/RSAcademy/ProtoCommence/ShopPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RSAcademy/RSAcademyAutomationPractisePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/RSAcademy/RSAcademyAutomationPractisePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RSAcademy/RSAcademyDocumentRequestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/RSAcademy/RSAcademyDocumentRequestPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RSAcademy/RSAcademyGreenKartTopDealsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/RSAcademy/RSAcademyGreenKartTopDealsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/HerokuApp/NestedFramesSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/HerokuApp/NestedFramesSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/JQueryUI/JQueryUIDatepickersSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/JQueryUI/JQueryUIDatepickersSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/RSAcademy/ProtoCommerce/CartSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/RSAcademy/ProtoCommerce/CartSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/RSAcademy/ProtoCommerce/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/RSAcademy/ProtoCommerce/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/RSAcademy/ProtoCommerce/ShopSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/RSAcademy/ProtoCommerce/ShopSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/RSAcademy/RSAcademyAutomationPractiseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/RSAcademy/RSAcademyAutomationPractiseSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/RSAcademy/RSAcademyDocumentRequestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/RSAcademy/RSAcademyDocumentRequestSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/RSAcademy/RSAcademyGreenKartTopDealsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/RSAcademy/RSAcademyGreenKartTopDealsSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/TestNGClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/TestNGClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Tag Library Descriptor" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,6 +59,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "/home/qa/Java_Selenium_Course/Java_Selenium_simple_login_and_cart-example/src/test/java",
+    "last_opened_file_path": "/home/qa/Java_Selenium_Course/Java_Selenium_simple_login_and_cart-example/src/test/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,6 +72,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -97,20 +86,7 @@
       <recent name="Pages.HerokuApp" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestNGClass">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="Java_Selenium_simple_login_and_cart-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG./home/qa/Java_Selenium_Course/Java_Selenium_simple_login_and_cart-example/src/test/resources/testng.xml">
     <configuration name="TestNGClass" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Java_Selenium_simple_login_and_cart-example" />
       <extension name="coverage">
@@ -122,6 +98,24 @@
       <option name="PACKAGE_NAME" value="Features" />
       <option name="MAIN_CLASS_NAME" value="Features.TestNGClass" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNGClass.test01_userShouldBeAbleToAddAllAvailableItemsFromThePageToCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Java_Selenium_simple_login_and_cart-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Features" />
+      <option name="MAIN_CLASS_NAME" value="Features.TestNGClass" />
+      <option name="METHOD_NAME" value="test01_userShouldBeAbleToAddAllAvailableItemsFromThePageToCart" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -146,11 +140,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/home/qa/Java_Selenium_Course/Java_Selenium_simple_login_and_cart-example/src/test/resources/testngSmoke.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Java_Selenium_simple_login_and_cart-example" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testngSmoke.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/home/qa/Java_Selenium_Course/Java_Selenium_simple_login_and_cart-example/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Java_Selenium_simple_login_and_cart-example" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./home/qa/Java_Selenium_Course/Java_Selenium_simple_login_and_cart-example/src/test/resources/testng.xml" />
+        <item itemvalue="TestNG./home/qa/Java_Selenium_Course/Java_Selenium_simple_login_and_cart-example/src/test/resources/testngSmoke.xml" />
+        <item itemvalue="TestNG.TestNGClass.test01_userShouldBeAbleToAddAllAvailableItemsFromThePageToCart" />
         <item itemvalue="TestNG.TestNGClass" />
         <item itemvalue="TestNG.TestNGClass.test2" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +186,9 @@
       <workItem from="1677485946136" duration="19215000" />
       <workItem from="1677780794170" duration="9361000" />
       <workItem from="1677841477806" duration="11328000" />
-      <workItem from="1677940892628" duration="4566000" />
+      <workItem from="1677940892628" duration="5186000" />
+      <workItem from="1678013857324" duration="5496000" />
+      <workItem from="1678099177150" duration="5724000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1677085736744</created>
@@ -256,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677881955558</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add testNG to project">
+      <created>1677948057204</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677948057204</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +314,8 @@
     <MESSAGE value="rearrange directories" />
     <MESSAGE value="add scenario to show skills of working with tables, pagination using streams;" />
     <MESSAGE value="update method name" />
-    <option name="LAST_COMMIT_MESSAGE" value="update method name" />
+    <MESSAGE value="add testNG to project" />
+    <option name="LAST_COMMIT_MESSAGE" value="add testNG to project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

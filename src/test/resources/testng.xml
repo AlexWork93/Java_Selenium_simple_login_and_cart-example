@@ -1,7 +1,34 @@
-<suite name = "Selenium Test Suite">
-    <test name = "Selenium Test Case">
+<suite name="Regression Test Suite">
+    <listeners>
+        <listener class-name = "Listeners"/>
+    </listeners>
+    <test name="Regression Test Case">
+        <parameter name = "URLLoginPagePractice" value = "https://rahulshettyacademy.com/loginpagePractise/"/>
         <classes>
-            <class name = "Features.TestNGClass"/>
+            <class name="Features.TestNGClass"/>
+        </classes>
+    </test>
+    <test name="Include Exclude display all">
+        <classes>
+            <class name="Features.testsToIncludeExcludeInXML"/>
+        </classes>
+    </test>
+    <test name="Include iMustBeIncluded">
+        <classes>
+            <class name="Features.testsToIncludeExcludeInXML">
+                <methods>
+                    <include name="iMustBeIncluded"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Exclude iMustBeExcluded">
+        <classes>
+            <class name="Features.testsToIncludeExcludeInXML">
+                <methods>
+                    <exclude name="iMustBeExcluded"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
